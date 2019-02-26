@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MySports</string>
+    <string name="runscore">本次运动成绩:</string>
+    <string name="runscore0">运动量得分：\t\t 速度得分：</string>
+    <string name="backwords_great">太棒啦！在刚刚的运动过程中，你的速度较快，运动时间较长，你的运动水平较高，身体素质较强，坚持锻炼，你的身体会更棒的！</string>
+    <string name="runscore_great">优秀！</string>
+    <string name="backwords_good">做的不错！在刚刚的运动过程中，你的速度达标，运动时间较长，希望你能继续保持，每天坚持锻炼！</string>
+    <string name="runscore_good">良好！</string>
+    <string name="backwords_normal">有进步！在刚刚的运动过程中，你的速度适中，运动时间可以再加长一些，希望你能以自己舒适的速度完成足够的训练量！</string>
+    <string name="runscore_normal">一般！</string>
+    <string name="backwords_bad">运动量太小，继续加油！相信自己的实力，运动贵在坚持，最大的敌人就是自己，每天坚持锻炼，一定能增强体魄，成为更好的自己！</string>
+    <string name="runscore_bad">较差！</string>
+    <string name="tips">1.根据你的训练目标选择一个训练模式\n2.学习正确的动作技术\n3.正确的训练永远围绕“你能做什么”而展开!\n4.当你开始运动，或者进入健身房时，始终都要有一个计划\n5.不论你做什么，持续4-6周\n6.利用一些时间来改变一些非常简单的营养习惯\n7.忽视那些错误的信息吧\n8.坚持基础\n9.别被健身时尚牵制自己\n10.了解一些基本的设计计划方法</string>
+</resources>

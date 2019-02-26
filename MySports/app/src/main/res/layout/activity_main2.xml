@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/Frame"
+        android:layout_width="fill_parent"
+        android:layout_height="240dip"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_test_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Frame"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        />
+
+
+    <Button
+    android:id="@+id/buttonDic"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="400dp"
+    android:layout_marginLeft="30dp"
+        android:background="@drawable/youdao_logo"/>
+    <Button
+        android:id="@+id/buttonPulse"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/buttonDic"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/xinlv_logo"/>
+    <Button
+        android:id="@+id/buttonCLL"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/buttonPulse"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/clr_logo"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:text="\t\t\t\t有道翻译\t\t\t\t\t\t\t\t\t\t\t心率测量\t\t\t\t\t\t\t卡路里计算器"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:text="登录"
+            android:textColor="@color/colorWhite"
+            />
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:text="注册"
+            android:textColor="@color/colorWhite"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+

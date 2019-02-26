@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mysports.MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="240dip"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tv_test_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/buttonRecord"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                />
+        <Button
+            android:id="@+id/buttonRun"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/startrun"
+             />
+        <Button
+            android:id="@+id/buttonDic"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/youdao_logo1"
+            />
+        <Button
+            android:id="@+id/buttonEng"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/buttonRun"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/eng_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/buttonCLL"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/buttonRun"
+            android:layout_toLeftOf="@+id/buttonRecord"
+            android:layout_margin="15dp"
+            android:text="卡路里\n计算"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/buttonPulse"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/buttonRun"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:text="心率测量"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/buttonMusicPlayer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@+id/buttonRecord"
+            android:layout_above="@+id/buttonRun"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:text="音乐播放"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/buttonTips"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/buttonCLL"
+            android:layout_toLeftOf="@+id/buttonRecord"
+            android:layout_margin="15dp"
+            android:text="健康贴士"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/buttonRecord"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/buttonPulse"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:text="运动记录"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/buttonDatas"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+           android:layout_toRightOf="@+id/buttonRecord"
+            android:layout_above="@+id/buttonMusicPlayer"
+            android:background="@drawable/dialog_btn_back_ok"
+            android:text="运动统计"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</RelativeLayout>

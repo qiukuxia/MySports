@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_bg"
+    tools:context="com.example.mysports.AudioActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/fileList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2" />
+
+
+        <RelativeLayout
+            android:id="@+id/btnBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6">
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/current_time_tv"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/seekBar1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/now"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="40dp"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:layout_toRightOf="@+id/current_time_tv"
+                android:layout_below="@+id/seekBar1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/total_time_tv"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/seekBar1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:layout_below="@+id/now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/buttonPre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="上一个"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/buttonPlay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="播放"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/buttonnext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="下一个"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/infoBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewInfo1"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

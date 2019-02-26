@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/tipbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text="十点建议让你享受每一次运动的快乐："/>
+    <TextView
+        android:id="@+id/tips"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorBlack"
+        android:text="@string/tips"/>
+
+
+</LinearLayout>
